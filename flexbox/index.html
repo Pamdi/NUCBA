@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+       <header class="top">
+           <h1><a href="#">May The 4th Be With You</a></h1>
+       </header>
+     <nav class="navegacion">
+        <a href="#" class="toggle"> Menu </a>
+       <ul>
+        <li><a href="">VADER</a></li>
+        <li><a href="">CHEWIE</a></li>
+        <li><a href="">YODA</a></li>
+        <li><a href="">RAY</a></li>
+
+        <li class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </li>
+
+        <li class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+
+        <li class="social">
+            <a href=""><i class="fab fa-github"></i></a>
+        </li>
+       </ul>
+    </nav>
+
+    <div class="items">
+
+    <div class="item">
+       <img src="./img/vader.jpg" alt=""/>
+    </div>
+
+    <div class="item">
+        <img src="./img/yoda.jpg" alt=""/>
+    </div>
+
+    <div class="item">
+        <img src="./img/ray.jpg" alt=""/>
+
+    </div>
+         <div class="item">
+        <img src="./img/chubaca.jpg" alt=""/>
+    </div>
+
+
+    </div>
+     <section class="details">
+       <p>TEXTOOOOOOO</p>
+       <p>MAY THE FOCER BE WITH YOU!!!!</p>
+       <p>MI YOUNG PADAWAN!!!!!!</p>
+     </section>
+
+    <section class="signup">
+       <form class="signup">
+           <input type="text" placeholder="TU NOMBRE">
+           <input type="email" placeholder="TU EMAIL">
+           <input type="submit" value="SUSCRIBIRME"> 
+        </form>
+     </section>
+     <footer>
+         <p>&copy;NUCBA BABY!!!!!</p>
+     </footer>
+    </div>
+      <script>
+          const toggle = document.querySelector ('.toggle');
+          const navUL  = document.querySelector ('nav.navegacion ul');
+            toggle.addEventListener ('click', () =>  {
+                navUL.classList.toggle ('open');
+            });
+
+      </script>
+    
+</body>
+</html>

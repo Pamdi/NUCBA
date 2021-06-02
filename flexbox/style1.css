@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html { box-sizing: border-box;}
+
+*,
+*::before,
+*::after {box-sizing: inherit;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(37,89,79,0.9752275910364145) 53%, rgba(2,8,0,1) 100%);}
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display:inline-block;
+    width: 100%;
+    text-align: center;}
+
+a:hover { 
+    background:rgba(0, 0, 0, 0.3);}
+
+.toggle {
+    display: none;}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+
+.navegacion li {
+    flex:3;}
+
+.navegacion .social {
+    flex: 1;}
+
+input { padding: 10px;
+        border:0;}
+
+section, footer {
+    text-align:center;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 100;}
+
+.items {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;}
+
+.item { 
+   flex: 1 0 25%;}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+    padding: 5px;}
+
+/*MEDIAAAA QUERIES*/
+
+@media all and (max-width:1000px) {
+
+.navegacion ul {flex-wrap:wrap;}
+
+.navegacion li {flex: 1 1 50%;}
+
+.items { flex-wrap: wrap;}
+
+.item { flex: 1 1 50%;
+        align-self: stretch;
+        margin:10 30px;}
+
+@media all and (max-width:500px) {
+
+.wrapper { display: flex;
+           flex-direction: column;}
+
+.wrapper > * { order: 999;}
+
+.navegacion li {flex-basis: 100%;}
+
+.toggle { display: block;}
+
+.navegacion ul {display: none;}
+
+.navegacion ul.open {display: flex;}
+
+        
+.navegacion { order: 1;}
+
+
+.top {order: 2;}
+
+.details { order: 3;}
+            
+.items { flex-wrap: wrap;}
+            
+.item { flex: 1 1 100%;
+         align-self: stretch;
+         margin:10 30px;}
+
+ }
+
+.signup {
+    order: 4;
+    display: flex;
+    flex-direction: column;}
+
+.signup input { margin: 5px;} 
+
+
+}
+
+
+
+

@@ -1,0 +1,45 @@
+body {
+    height: 1600px;}
+
+.box { width: 100px;
+height: 100px;
+border: 1px solid black;
+margin: 10px;}
+
+.contenedor { display: relative;
+width: 500px;
+height: 500px;
+background: #333;}
+
+#box1 { position: relative;
+    left: 50px;
+    top: 50px;
+    background: blue;
+    z-index:1;}
+
+#box2 { position: absolute;
+     background: green;
+     top: 200px;
+     left: 200px;}
+
+#box3 { position: absolute;
+     background: peru;
+    left: 300px;
+    top: 300px;}
+
+
+#box4 { 
+    height: 74px;
+    width: 100%;
+    position: fixed;
+    background: yellow;
+    padding: 24px;
+    top: 0;
+    left: 0;
+    z-index: 10;}
+
+#box5 {
+    position: sticky;
+    background: red;
+    top: 0;
+    z-index: -1;}
