@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE AREA ATR</title>
+<style> 
+    .contenedor {
+            display: grid;
+            grid-template-areas: 
+            'header header header header'
+            'contenido contenido contenido sidebar'
+            'box1 box2 box3 box4'
+            'footer footer footer footer';
+             grid-gap: 1rem;}
+
+    .header,
+    .contenido,
+    .sidebar,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .footer {
+         border: 1px solid #ccc;}
+
+.header {grid-area: header;}
+
+.contenido {grid-area: contenido;}
+
+.sidebar {grid-area: sidebar;}
+
+.box1 {grid-area: box1;} 
+
+.box2 {grid-area: box2;}
+
+.box3 {grid-area: box3;}
+
+.box4 {grid-area: box4;}
+
+.footer {grid-area: footer;}
+
+@media (max-width: 500px)
+{
+    .contenedor {
+        grid-template-areas: 
+         'header'
+         'contenido' 
+         'sidebar'
+         'box1' 
+         'box2' 
+         'box3' 
+         'box4'
+         'footer';}
+}
+         
+    </style>
+
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <header class="header">
+           <h1>Hola Soy un Header</h1>
+    </header>
+
+        <section class="contenido">
+            <h3>Hola Nucber</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum enim expedita quos non ullam inventore vitae cupiditate perspiciatis. Harum omnis temporibus ad voluptates minus exercitationem iste consequuntur eos nihil?</p>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Chau Nucber</h3>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+        </aside>
+
+        <div class="box1">
+            <h3>Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae nihil similique suscipit facilis odit, consequatur necessitatibus hic eos dolorum voluptate magni explicabo totam obcaecati molestias? Quae ad impedit officiis!</p>
+        </div>
+        <div class="box2">
+            <h3>Box 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae nihil similique suscipit facilis odit, consequatur necessitatibus hic eos dolorum voluptate magni explicabo totam obcaecati molestias? Quae ad impedit officiis!</p>
+        </div>
+        <div class="box3">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae nihil similique suscipit facilis odit, consequatur necessitatibus hic eos dolorum voluptate magni explicabo totam obcaecati molestias? Quae ad impedit officiis!</p>
+        </div>
+        <div class="box4">
+            <h3>Box 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae nihil similique suscipit facilis odit, consequatur necessitatibus hic eos dolorum voluptate magni explicabo totam obcaecati molestias? Quae ad impedit officiis!</p>
+        </div>
+
+    <footer class="footer">
+        <p>copyright &copy; Nucba 2021</p>
+    </footer>
+</div>
+    
+</body>
+</html>

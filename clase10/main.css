@@ -1,0 +1,37 @@
+:root {
+    --color-cheto: linear-gradient(0deg, rgba(0,0,0,1) 13%, 
+    rgba(135,1,125,1) 29%, );}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);}
+
+*,
+*::before,
+*::after {box-sizing: inherit;}
+
+body {
+    background:linear-gradient( 90deg, #fc466b 0%, #3f5efb 100% );
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    background-attachment: fixed;
+    letter-spacing: -1px;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+    color:white}
+
+p {color: white;}
+
+a { color: white;}
+
