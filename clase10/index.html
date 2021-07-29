@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css"/>
     <link rel="stylesheet" href="./style.css"/>
-    <title>Responsive Website!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>NUCBA-CONF</title>
 </head>
 <body>
     <div class="wrapper">
       <div class="top">
+
           <header class= "principal">
               <h1>NUCBA-CONF</h1>
               <p>Somos chetoss....</p>
               <p>Chetos malll</p>
           </header>
+
         <div class="entrada entrada1">
             <p>ENTRADA</p>
             <p class="price">$500</p>
             <p>VIP + FOTO CON FACU</p>
         </div>
+
         <div class="entrada entrada2">
             <p>ENTRADA</p>
             <p class="price">$200</p>
-            <p>AL FONDO Y SARASA CON LUCHO</p>
+            <p>AL FONDO Y 🥃 🥃  CON LUCHO</p>
         </div>
     </div>
 
-     <nav class="Menu">
+     <nav class="menu">
 
-         <button aria-expanded="false" aria-controls="menu-list">
+         <button aria-expanded="true" aria-controls="menu-list">
              <span class="open">&#9776;</span>
              <span class="close">&#9747;</span>
              Menu
@@ -61,43 +65,68 @@
 
      <section class="features">
          <div class="feature">
-            <span class="icon"></span>
+            <span class="icon">🍔</span>
              <h3>Comida</h3>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident laboriosam voluptate assumenda sequi. Illo consequatur, ea aliquam totam debitis dicta possimus fugit. Quae, cumque harum rem ipsam facere exercitationem.</p>
          </div>
 
          <div class="feature">
-            <span class="icon"></span>
+            <span class="icon">🍺</span>
              <h3>Birra</h3>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident laboriosam voluptate assumenda sequi. Illo consequatur, ea aliquam totam debitis dicta possimus fugit. Quae, cumque harum rem ipsam facere exercitationem.</p>
          </div>
 
          <div class="feature">
-            <span class="icon"></span>
+            <span class="icon">💻</span>
              <h3>CODE BABY</h3>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident laboriosam voluptate assumenda sequi. Illo consequatur, ea aliquam totam debitis dicta possimus fugit. Quae, cumque harum rem ipsam facere exercitationem.</p>
          </div>
 
          <div class="feature">
-            <span class="icon"></span>
+            <span class="icon">🎵 </span>
              <h3>Musica All Nigth</h3>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident laboriosam voluptate assumenda sequi. Illo consequatur, ea aliquam totam debitis dicta possimus fugit. Quae, cumque harum rem ipsam facere exercitationem.</p>
          </div>
          </section>
 
+         <section class="about">
+            <video src="C:\Users\Malena\Desktop\NUCBA-CSS\clase10/indio.mp4" controls></video>
+            <div class="about__details">
+                <h2>VAMOS A CODEAR</h2>
+                <p>Slim profile, easy to hold and loaded with cheese</p>
+                <p>This is the one you have been waiting for</p>
+                <button>Info plissss &#10142;</button>
+            </div>
+         </section>
+
          <section class="gallery">
              <h2>Instant Grams</h2>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
-             <img src="" alt=""/>
+             <img src="https://source.unsplash.com/random/201x201" alt=""/>
+             <img src="https://source.unsplash.com/random/202x202" alt=""/>
+             <img src="https://source.unsplash.com/random/203x203" alt=""/>
+             <img src="https://source.unsplash.com/random/204x204" alt=""/>
+             <img src="https://source.unsplash.com/random/205x205" alt=""/>
+             <img src="https://source.unsplash.com/random/206x206" alt=""/>
+             <img src="https://source.unsplash.com/random/207x207" alt=""/>
+             <img src="https://source.unsplash.com/random/207x208" alt=""/>
+             <img src="https://source.unsplash.com/random/207x209" alt=""/>
+             <img src="https://source.unsplash.com/random/207x210" alt=""/>
         </section>
       </div>
+
+      <script>
+
+          const navButton = document.querySelector('button[aria-expanded]');
+          
+          function toggleNav({ target })
+            {
+              const expandir = 
+              target.getAttribute('aria-expanded') === 'true' ||false;
+              navButton.setAttribute  ('aria-expanded', !expandir); 
+            }
+            
+            navButton.addEventListener('click',toggleNav);
+      </script>
+
    </body>
 </html>
